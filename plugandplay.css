@@ -1,0 +1,19 @@
+body{
+	background-image:url('http://www.hdwallpapers.in/walls/golden_city_coast-wide.jpg');
+	
+}
+
+.container
+{
+	background:rgba(256,256,256,0.7);
+	border-radius:10px;
+	padding:20px;
+	margin:20px;
+	min-height:300px;
+}
+
+.navbar-brand{
+	color:white;
+	font-weight:700;
+	line-height:10px;
+}

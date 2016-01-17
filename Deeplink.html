@@ -3,15 +3,33 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+		<!-- JQUERY CDN FILES STARTS-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- JQUERY CDN FILES -->
+        
+		<!-- Required CSS & JAVASCRIPT LOCAL FILES STARTS-->
+		<link rel="stylesheet" href="plugandplay.css">
+        <script src="plugandplay.js"></script>
+		<script src="moment.min.js"></script>
+		<!-- Required CSS & JAVASCRIPT FILES-->
+		
+		<!-- BOOTSTRAP CDN FILES STARTS-->
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <!--<script src="ui-bootstrap-tpls-0.14.3.min.js"></script>-->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="plugAndPlay.css">
-        <script src="plugAndPlay.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- BOOTSTRAP CDN FILES -->
+		
+		<!-- BOOTSTRAP DATETIME PICKER CDN FILES STARTS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+		<!-- BOOTSTRAP DATETIME CDN FILES -->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        
     </head>
-    <body style="background-image:url('http://7-themes.com/data_images/out/23/6845623-scenery.jpg');" >
+	
+	
+    <body>
      <div class="container">    
 			<nav class="navbar">
 
@@ -30,19 +48,19 @@
 
 							<ul class="nav nav-pills">
 								<li role="navigation"  class="active">
-									<a href="#flights" data-toggle="tab"><span class="glyphicon glyphicon-expand"></span>Flights</a>
+									<a href="#flights" data-toggle="tab"><span class="glyphicon glyphicon-play"></span> Flights</a>
 								</li>
 								<li role="navigation">
-									<a href="#hotels" data-toggle="tab"><i class="glyphicon glyphicon-expand"></i>Hotels</a>
+									<a href="#hotels" data-toggle="tab"><i class="glyphicon glyphicon-play"></i> Hotels</a>
 								</li>
 								<li role="navigation">
-									<a href="#cars" data-toggle="tab"><i class="glyphicon glyphicon-expand"></i>Cars</a>
+									<a href="#cars" data-toggle="tab"><i class="glyphicon glyphicon-play"></i> Cars</a>
 								</li>
 								<li role="navigation">
-									<a href="#activity" data-toggle="tab"><i class="glyphicon glyphicon-expand"></i>Activity</a>
+									<a href="#activity" data-toggle="tab"><i class="glyphicon glyphicon-play"></i> Activity</a>
 								</li>
 								<li role="navigation">
-									<a href="#"><i class="glyphicon glyphicon-expand"></i>Package</a>
+									<a href="#"><i class="glyphicon glyphicon-play"></i> Package</a>
 								</li>
 							</ul>
 
@@ -70,47 +88,85 @@
 
 			<!--    ACTIVITY PANE STARTS FROM HERE LOOK FOR COMMENT TO END ACTIVITY PANE-->
 					<div class="tab-pane fade" id="activity">
-						<form class="form-horizontal container-fluid" action="#" method="GET" role="form" name="search" id="formActivity">
-
-							<div class="form-group container-fluid">
+					
+						<form class="form-vertical" action="#" method="GET" role="form" name="search" id="formActivity">
+						
+							<div class="form-group">
+							
 								<div class="row">
-
-										<label class="col-sm-1 control-label" for="destinationActivity">Destination:</label>
-
-										<div class="col-sm-11">
-											<input type="text" class="form-control" id="destinationActivity" placeholder="Destination" name="destination" data-toggle="tooltip" title="Pick Up A Destination!" data-placement="bottom"/>
-											<input type="hidden" id="rDestAct" name="rdest" value="" />
-										</div>     
-
+								
+									<div class="col-sm-12">
+										
+										<label class="control-label clearfix" for="destinationActivity">Destination:</label>
+										
+										<input type="text" class="form-control" id="destinationActivity" placeholder="Destination" name="destination" data-toggle="tooltip" title="Pick Up A Destination!" data-placement="bottom"/>
+										
+										<input type="hidden" id="rDestAct" name="rdest" value="" />
+								
+									</div>
+									
 								</div>
+								
 							</div>
-							<div class="form-group container-fluid">
+							
+							<div class="form-group">
+							
 								<div class="row">
-
-										<label class=" col-sm-1 control-label" for="cInDateActivity">From:</label>    
-										<div class="col-sm-5">
+								
+									<div class="col-sm-6">
+									
+										<label class="control-label clearfix" for="cInDateActivity">From:</label>
+									
+										<div class='input-group date datepicker'>
 											<input type="text" class="form-control cInDate" id="cInDateActivity" placeholder="MM/DD/YYYY" type="text" name="cInDate" data-toggle="tooltip" title="Pick Up A Start Date!" data-placement="bottom" />
+											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+											</span>
 										</div>
-
-										<label class="col-sm-1 control-label" for="cOutDateActivity">To:</label>    
-										<div class="col-sm-5">
+										
+									</div>
+								
+									<div class="col-sm-6">
+									
+										<label class="control-label clearfix" for="cOutDateActivity">To:</label>    
+										
+										<div class='input-group date datepicker'>
 											<input type="text" class="form-control cInDate" id="cOutDateActivity" placeholder="MM/DD/YYYY"  type="text" name="cOutDate" data-toggle="tooltip" title="Pick Up A End Date!" data-placement="bottom" />
+											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+											</span>
 										</div>
-
+										
+											
+										
+										
+									</div>
+									
 								</div>
+							
 							</div>
-
-							<div  class="form-group container-fluid">
-								<input type="submit" class="btn btn-primary btn-md pull-right" value="Search Activity" >
-								<!-- Data Parameters that gets passed through URL GET request -->
-								<input type="submit" class="hidden submitActivity" value="Search" id="submitActivity" name="button" />
-								<input type="hidden" name="DoSearch" value="N" class="doSearch" />
-								<input type="hidden" name="DoAdvancedSearch" value="N" class="doAdvancedSearch" />
-								<input type="hidden" name="cid" id="hdnActivityCid" value="" />
-
+							
+							<div  class="form-group">	
+							
+								<div class="row">
+								
+									<div class="col-sm-12">
+									
+										<input type="submit" class="btn btn-primary btn-md pull-right" value="Search Activity">
+										
+										<!-- Data Parameters that gets passed through URL GET request -->
+										<input type="submit" class="hidden submitActivity" value="Search" id="submitActivity" name="button" />
+										<input type="hidden" name="DoSearch" value="N" class="doSearch" />
+										<input type="hidden" name="DoAdvancedSearch" value="N" class="doAdvancedSearch" />
+										<input type="hidden" name="cid" id="hdnActivityCid" value="" />
+										<!-- Data Parameters that gets passed through URL GET request -->
+										
+									</div>
+									
+								</div>
+								
 							</div>
-
+							
 						</form> 
+						
 					</div>
 			<!--    ACTIVITY PANE ENDS HERE-->
 
@@ -124,40 +180,23 @@
 	<script>
 		$(document).ready(function(){
 			
-			$('input[data-toggle="tooltip"]').tooltip();
+			$('input[data-toggle="tooltip"]').tooltip({
+				delay: 500,
+				trigger: 'hover',
+				placement:'top'				
+			});
+				
+			$('.datepicker').datetimepicker({
+				format: 'MM/DD/YYYY',
+			});
+			
+			$('.timepicker').datetimepicker({
+				format: 'HH:MM',
+			});
 			
 		});
-			
-			
+		
+		
 		
 	</script>
-	
-	
 </html>
-
-
-
-
-
-
-
-
-<!--<nav class="navbar navbar-inverse">
- <div class="container-fluid">
-   <div class="navbar-header">
-     <a class="navbar-brand" href="#">WebSiteName</a>
-   </div>
-   <ul class="nav navbar-nav">
-     <li class="active"><a href="#">Home</a></li>
-     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-       <ul class="dropdown-menu">
-         <li><a href="#">Page 1-1</a></li>
-         <li><a href="#">Page 1-2</a></li>
-         <li><a href="#">Page 1-3</a></li>
-       </ul>
-     </li>
-     <li><a href="#">Page 2</a></li>
-     <li><a href="#">Page 3</a></li>
-   </ul>
- </div>
-</nav>-->
