@@ -11,113 +11,113 @@
         <link rel="stylesheet" href="plugAndPlay.css">
         <script src="plugAndPlay.js"></script>
     </head>
-    <body>
-            <div class="container">    
-        <nav class="navbar">
-            
-            <div class="container-fluid">
+    <body style="background-image:url('http://7-themes.com/data_images/out/23/6845623-scenery.jpg');" >
+     <div class="container">    
+			<nav class="navbar">
 
-                <div class="navbar-header">
-                    <a href="#" class="navbar-brand">Deeplink</a>
+				<div class="container-fluid">
 
-                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-                        <span class="glyphicon glyphicon-th"></span>
-                    </button>
-                </div>
+					<div class="navbar-header">
+						<a href="#" class="navbar-brand">Deeplink</a>
 
-
-                <div class="collapse navbar-collapse navHeaderCollapse">
-
-                        <ul class="nav nav-pills">
-                            <li role="navigation"  class="active">
-                                <a href="#flights" data-toggle="tab"><span class="glyphicon glyphicon-expand"></span>Flights</a>
-                            </li>
-                            <li role="navigation">
-                                <a href="#hotels" data-toggle="tab"><i class="glyphicon glyphicon-expand"></i>Hotels</a>
-                            </li>
-                            <li role="navigation">
-                                <a href="#cars" data-toggle="tab"><i class="glyphicon glyphicon-expand"></i>Cars</a>
-                            </li>
-                            <li role="navigation">
-                                <a href="#activity" data-toggle="tab"><i class="glyphicon glyphicon-expand"></i>Activity</a>
-                            </li>
-                            <li role="navigation">
-                                <a href="#"><i class="glyphicon glyphicon-expand"></i>Package</a>
-                            </li>
-                        </ul>
-
-                </div>
-         </div>
-    </nav>
-
-    <div class="tab-content">
-
-        <!--    FLIGHT PANE STARTS FROM HERE LOOK FOR COMMENT TO END FLIGHTS PANE-->
-        <div class="tab-pane fade in active" id="flights">
-            <h1>Flights</h1>
-        </div>
-
-        <!--    HOTELS PANE STARTS FROM HERE LOOK FOR COMMENT TO END HOTELS PANE-->
-        <div class="tab-pane fade" id="hotels">
-            <h1>Hotels</h1>
-        </div>
-
-        <!--    CARS PANE STARTS FROM HERE LOOK FOR COMMENT TO END CARS PANE-->
-        <div class="tab-pane fade" id="cars">
-            <h1>Cars</h1>
-        </div>
-
-		
-<!--    ACTIVITY PANE STARTS FROM HERE LOOK FOR COMMENT TO END ACTIVITY PANE-->
-        <div class="tab-pane fade" id="activity">
-            <form class="form-horizontal" action="#" method="GET" role="form" name="search" id="formActivity">
-                
-				<div class="form-group">
-					<div class="row">
-						
-							<label class="col-sm-1 control-label" for="destinationActivity">Destination:</label>
-
-							<div class="col-sm-11">
-								<input type="text" class="form-control" id="destinationActivity" placeholder="Destination" name="destination" data-toggle="tooltip" title="Pick Up A Destination!" data-placement="bottom"/>
-								<input type="hidden" id="rDestAct" name="rdest" value="" />
-							</div>     
-						
-                	</div>
-				</div>
-                <div class="form-group">
-					<div class="row">
-						
-							<label class=" col-sm-1 control-label" for="cInDateActivity">From:</label>    
-							<div class="col-sm-5">
-								<input type="text" class="form-control cInDate" id="cInDateActivity" placeholder="MM/DD/YYYY" type="text" name="cInDate" data-toggle="tooltip" title="Pick Up A Start Date!" data-placement="bottom" />
-							</div>
-						
-							<label class="col-sm-1 control-label" for="cOutDateActivity">To:</label>    
-							<div class="col-sm-5">
-								<input type="text" class="form-control cInDate" id="cOutDateActivity" placeholder="MM/DD/YYYY"  type="text" name="cOutDate" data-toggle="tooltip" title="Pick Up A End Date!" data-placement="bottom" />
-							</div>
-						
+						<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+							<span class="glyphicon glyphicon-th"></span>
+						</button>
 					</div>
-                </div>
-			
-				<div  class="form-group">
-					<input type="submit" class="btn btn-primary btn-md pull-right" value="Search Activity" >
-					<!-- Data Parameters that gets passed through URL GET request -->
-					<input type="submit" class="hidden submitActivity" value="Search" id="submitActivity" name="button" />
-					<input type="hidden" name="DoSearch" value="N" class="doSearch" />
-					<input type="hidden" name="DoAdvancedSearch" value="N" class="doAdvancedSearch" />
-					<input type="hidden" name="cid" id="hdnActivityCid" value="" />
-					<input type="hidden" name="update" value="true" />			
-				</div>
-			
-            </form> 
-        </div>
-<!--    ACTIVITY PANE ENDS HERE-->
 
-				
-    </div>   
-                
-        </div>            
+
+					<div class="collapse navbar-collapse navHeaderCollapse">
+
+							<ul class="nav nav-pills">
+								<li role="navigation"  class="active">
+									<a href="#flights" data-toggle="tab"><span class="glyphicon glyphicon-expand"></span>Flights</a>
+								</li>
+								<li role="navigation">
+									<a href="#hotels" data-toggle="tab"><i class="glyphicon glyphicon-expand"></i>Hotels</a>
+								</li>
+								<li role="navigation">
+									<a href="#cars" data-toggle="tab"><i class="glyphicon glyphicon-expand"></i>Cars</a>
+								</li>
+								<li role="navigation">
+									<a href="#activity" data-toggle="tab"><i class="glyphicon glyphicon-expand"></i>Activity</a>
+								</li>
+								<li role="navigation">
+									<a href="#"><i class="glyphicon glyphicon-expand"></i>Package</a>
+								</li>
+							</ul>
+
+					</div>
+			 	</div>
+			</nav>
+			<div class="container">  
+				<div class="tab-content">
+
+					<!--    FLIGHT PANE STARTS FROM HERE LOOK FOR COMMENT TO END FLIGHTS PANE-->
+					<div class="tab-pane fade in active" id="flights">
+						<h1>Flights</h1>
+					</div>
+
+					<!--    HOTELS PANE STARTS FROM HERE LOOK FOR COMMENT TO END HOTELS PANE-->
+					<div class="tab-pane fade" id="hotels">
+						<h1>Hotels</h1>
+					</div>
+
+					<!--    CARS PANE STARTS FROM HERE LOOK FOR COMMENT TO END CARS PANE-->
+					<div class="tab-pane fade" id="cars">
+						<h1>Cars</h1>
+					</div>
+
+
+			<!--    ACTIVITY PANE STARTS FROM HERE LOOK FOR COMMENT TO END ACTIVITY PANE-->
+					<div class="tab-pane fade" id="activity">
+						<form class="form-horizontal container-fluid" action="#" method="GET" role="form" name="search" id="formActivity">
+
+							<div class="form-group">
+								<div class="row">
+
+										<label class="col-sm-1 control-label" for="destinationActivity">Destination:</label>
+
+										<div class="col-sm-11">
+											<input type="text" class="form-control" id="destinationActivity" placeholder="Destination" name="destination" data-toggle="tooltip" title="Pick Up A Destination!" data-placement="bottom"/>
+											<input type="hidden" id="rDestAct" name="rdest" value="" />
+										</div>     
+
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="row">
+
+										<label class=" col-sm-1 control-label" for="cInDateActivity">From:</label>    
+										<div class="col-sm-5">
+											<input type="text" class="form-control cInDate" id="cInDateActivity" placeholder="MM/DD/YYYY" type="text" name="cInDate" data-toggle="tooltip" title="Pick Up A Start Date!" data-placement="bottom" />
+										</div>
+
+										<label class="col-sm-1 control-label" for="cOutDateActivity">To:</label>    
+										<div class="col-sm-5">
+											<input type="text" class="form-control cInDate" id="cOutDateActivity" placeholder="MM/DD/YYYY"  type="text" name="cOutDate" data-toggle="tooltip" title="Pick Up A End Date!" data-placement="bottom" />
+										</div>
+
+								</div>
+							</div>
+
+							<div  class="form-group">
+								<input type="submit" class="btn btn-primary btn-md pull-right" value="Search Activity" >
+								<!-- Data Parameters that gets passed through URL GET request -->
+								<input type="submit" class="hidden submitActivity" value="Search" id="submitActivity" name="button" />
+								<input type="hidden" name="DoSearch" value="N" class="doSearch" />
+								<input type="hidden" name="DoAdvancedSearch" value="N" class="doAdvancedSearch" />
+								<input type="hidden" name="cid" id="hdnActivityCid" value="" />
+
+							</div>
+
+						</form> 
+					</div>
+			<!--    ACTIVITY PANE ENDS HERE-->
+
+
+				</div>   
+			</div>      
+    </div>            
                 
     </body>
 
