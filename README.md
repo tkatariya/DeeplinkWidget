@@ -1,2 +1,2 @@
 # DeeplinkWidget
-Creating a responsive deeplink widget
+Creating a responsive deeplink widget.
