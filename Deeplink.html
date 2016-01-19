@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+	
+		<title>Deeplink Widget</title>
+	
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -48,19 +51,19 @@
 
 							<ul class="nav nav-pills">
 								<li role="navigation"  class="active">
-									<a href="#flights" data-toggle="tab"><span class="glyphicon glyphicon-play"></span> Flights</a>
+									<a href="#flights" data-toggle="tab" class="flightsTab"><span class="glyphicon glyphicon-play"></span> Flights</a>
 								</li>
 								<li role="navigation">
-									<a href="#hotels" data-toggle="tab"><i class="glyphicon glyphicon-play"></i> Hotels</a>
+									<a href="#hotels" data-toggle="tab"  class="hotelsTab"><i class="glyphicon glyphicon-play"></i> Hotels</a>
 								</li>
 								<li role="navigation">
-									<a href="#cars" data-toggle="tab"><i class="glyphicon glyphicon-play"></i> Cars</a>
+									<a href="#cars" data-toggle="tab"  class="carsTab"><i class="glyphicon glyphicon-play"></i> Cars</a>
 								</li>
 								<li role="navigation">
-									<a href="#activity" data-toggle="tab"><i class="glyphicon glyphicon-play"></i> Activity</a>
+									<a href="#activity" data-toggle="tab"  class="activityTab"><i class="glyphicon glyphicon-play"></i> Activity</a>
 								</li>
 								<li role="navigation">
-									<a href="#"><i class="glyphicon glyphicon-play"></i> Package</a>
+									<a href="#"  class="packagesTab"><i class="glyphicon glyphicon-play"></i> Package</a>
 								</li>
 							</ul>
 
@@ -77,7 +80,84 @@
 
 					<!--    HOTELS PANE STARTS FROM HERE LOOK FOR COMMENT TO END HOTELS PANE-->
 					<div class="tab-pane fade" id="hotels">
-						<h1>Hotels</h1>
+						
+						<form class="form-vertical" action="#" method="GET" role="form" name="search" id="formHotel">
+						
+							<div class="form-group">
+							
+								<div class="row">
+								
+									<div class="col-sm-12">
+										
+										<label class="control-label clearfix" for="destination">Destination:</label>
+										
+										<input type="text" class="form-control" id="destination" placeholder="Destination" name="destination" data-toggle="tooltip" title="Pick Up A Destination!" data-placement="bottom"/>
+										
+										<input type="hidden" id="rDest" name="rdest" value="" />
+									</div>
+									
+								</div>
+								
+							</div>
+							
+							<div class="form-group">
+							
+								<div class="row">
+								
+									<div class="col-sm-6">
+									
+										<label class="control-label clearfix" for="cInDate">From:</label>
+									
+										<div class='input-group date datepicker'>
+											<input type="text" class="form-control cInDate" id="cInDate" placeholder="MM/DD/YYYY" type="text" name="cInDate" data-toggle="tooltip" title="Pick Up A CheckIn Date!" data-placement="bottom" />
+											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+											</span>
+										</div>
+										
+									</div>
+								
+									<div class="col-sm-6">
+									
+										<label class="control-label clearfix" for="cOutDate">To:</label>    
+										
+										<div class='input-group date datepicker'>
+											<input type="text" class="form-control cOutDate" id="cOutDate" placeholder="MM/DD/YYYY"  type="text" name="cOutDate" data-toggle="tooltip" title="Pick Up A CheckOut Date!" data-placement="bottom" />
+											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+											</span>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							
+							<div  class="form-group">	
+							
+								<div class="row">
+								
+									<div class="col-sm-12">
+									
+										<input type="submit" class="btn btn-primary btn-md pull-right hotelSearch" value="Search Hotel">
+										<!-- Data Parameters that gets passed through URL GET request -->
+										<input type="submit" class="hidden submitHotel" value="Search" id="submitHotel" name="button" />
+										<input type="hidden" name="DoSearch" value="N" class="doSearch" />
+										<input type="hidden" name="DoAdvancedSearch" value="N" class="doAdvancedSearch" />
+										<input type="hidden" name="cid" id="hdnHotelCid" value="" />
+										<!-- Data Parameters that gets passed through URL GET request -->
+										
+									</div>
+									
+								</div>
+								
+							</div>
+							
+							
+							
+							
+							
+							
+							
+							
+						</form>
 					</div>
 
 					<!--    CARS PANE STARTS FROM HERE LOOK FOR COMMENT TO END CARS PANE-->
@@ -134,9 +214,6 @@
 											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
 											</span>
 										</div>
-										
-											
-										
 										
 									</div>
 									

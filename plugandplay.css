@@ -1,6 +1,15 @@
+
 body{
-	background-image:url('http://www.hdwallpapers.in/walls/golden_city_coast-wide.jpg');
+	/*background-image:url('http://intergrecotravel.com/paros/wp-content/uploads/2013/11/world-tour-and-travel-destination-high-definition.jpg');*/
 	
+	background-repeat: no-repeat;
+	background-image:url('http://dmhdwallpapers.com/wp-content/uploads/2015/02/travel-summer-holidays.jpg');
+	background-size:cover;
+	-webkit-transition:all 1s linear ;
+    -moz-transition:all 1s linear ;
+    -o-transition:all 1s linear ;
+    -ms-transition:all 1s linear ;
+    transition:all 1s linear ;
 }
 
 .container
