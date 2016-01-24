@@ -31,7 +31,6 @@
         
     </head>
 	
-	
     <body>
      <div class="container">    
 			<nav class="navbar">
@@ -75,8 +74,614 @@
 
 					<!--    FLIGHT PANE STARTS FROM HERE LOOK FOR COMMENT TO END FLIGHTS PANE-->
 					<div class="tab-pane fade in active" id="flights">
-						<h1>Flights</h1>
+				        <form clas="form-vertical" action="#" method="get" role="form" name="search" id="formFlight">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="btn-group">
+                                            
+                                            <ul class="nav nav-tabs nav-justified">
+                                                <li role="navigation" class="active">
+                                                    <a href="#roundTrip" data-toggle="tab" class="roundTripTab">Round Trip</a>
+                                                </li>
+                                                <li role="navigation">
+                                                    <a href="#oneWay" data-toggle="tab" class="oneWayTab">One Way</a>
+                                                </li>
+                                                <li role="navigation">
+                                                    <a href="#multicity" data-toggle="tab" class="multicityTab">Multicity</a>
+                                                </li>
+                                            </ul> 
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <!--    ROUNDTRIP PANE STARTS FROM HERE LOOK FOR COMMENT TO END HOTELS PANE-->
+                                <div class="tab-pane fade in active" id="roundTrip">
+                                    
+                                    <div class = "form-group">
+                                        <div class="row">
+                                            
+                                            <div class="col-sm-6">
+                                                <label class="control-label clearfix" for="depAP">From:</label>
+                                                
+                                                <input type="text" class="form-control destinations" id="depAP" placeholder="Enter a city or airport" name="depAP" data-toggle="tooltip" title="Pick Up Departure Airport!" data-placement="bottom" />
+                                            </div>
+                                            
+                                            <div class="col-sm-6">
+                                                <label class="control-label clearfix" for="retAP">To:</label>
+                                                
+                                                <input type="text" class="form-control destinations" id="retAP" placeholder="Enter a city or airport" name="retAP" data-toggle="tooltip" title="Pick Up Arrival Airport!" data-placement="bottom" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                    
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <label class="control-label clearfix" for="depDate">Depart Date:</label>
+                                                
+                                                <div class='input-group date datepicker'>
+                                                    <input type="text" class="form-control" id="depDate" placeholder="Pick a Date" name="depDate" data-toggle="tooltip" title="Pick Up Departure Date!" data-placement="bottom" />
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-3">
+                                                <label class="control-label clearfix" for="depTime">Depart Time:</label>
+                                                
+                                                <div class='input-group date timepicker'>
+                                                    <input type="text" class="form-control" id="depTime" placeholder="Pick a Time" name="depTime" data-toggle="tooltip" title="Pick Up Departure Time!" data-placement="bottom" />
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                                                </span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-3">
+                                                <label class="control-label clearfix" for="retDate">Arrival Date:</label>
+                                                
+                                                <div class='input-group date datepicker'>
+                                                    <input type="text" class="form-control" id="retDate" placeholder="Pick a Date" name="retDate" data-toggle="tooltip" title="Pick Up Arrival Date!" data-placement="bottom" />
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                                </div>
+                                            </div>
+                                            
+                                             <div class="col-sm-3">
+                                                    <label class="control-label clearfix" for="retTime">Arrival Time:</label>
+
+                                                    <div class='input-group date timepicker'>
+                                                        <input type="text" class="form-control" id="retTime" placeholder="Pick a Time" name="retTime" data-toggle="tooltip" title="Pick Up Arrival Time!" data-placement="bottom" />
+                                                        <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                                                    </span>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        
+                                        <div class="row">
+                                        
+                                            <div class="col-sm-4">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Adults(12+ yrs)
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">1</a></li>
+                                                        <li><a href="#">2</a></li>
+                                                        <li><a href="#">3</a></li>
+                                                        <li><a href="#">4</a></li>
+                                                        <li><a href="#">5</a></li>
+                                                        <li><a href="#">6</a></li>
+                                                        <li><a href="#">7</a></li>
+                                                        <li><a href="#">8</a></li>
+                                                        <li><a href="#">9</a></li>
+                                                    </ul>
+                                                </div>
+                                        </div>
+                                            
+                                            <div class="col-sm-4">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Children(2-11 yrs)
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">0</a></li>
+                                                        <li><a href="#">1</a></li>
+                                                        <li><a href="#">2</a></li>
+                                                        <li><a href="#">3</a></li>
+                                                        <li><a href="#">4</a></li>
+                                                        <li><a href="#">5</a></li>
+                                                        <li><a href="#">6</a></li>
+                                                        <li><a href="#">7</a></li>
+                                                        <li><a href="#">8</a></li>
+                                                        <li><a href="#">9</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-4">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Infants(<2yrs in lap)
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                 <!--    ROUNDTRIP PANE ENDS HERE-->
+
+                                <!--    ONEWAY PANE STARTS FROM HERE LOOK FOR COMMENT TO END HOTELS PANE-->
+                                <div class="tab-pane fade" id="oneWay">
+                                    <div class = "form-group">
+                                        <div class="row">
+                                            
+                                            <div class="col-sm-6">
+                                                <label class="control-label clearfix" for="depAP">From:</label>
+                                                
+                                                <input type="text" class="form-control destinations" id="depAP" placeholder="Enter a city or airport" name="depAP" data-toggle="tooltip" title="Pick Up Departure Airport!" data-placement="bottom" />
+                                            </div>
+                                            
+                                            <div class="col-sm-6">
+                                                <label class="control-label clearfix" for="retAP">To:</label>
+                                                
+                                                <input type="text" class="form-control destinations" id="retAP" placeholder="Enter a city or airport" name="retAP" data-toggle="tooltip" title="Pick Up Arrival Airport!" data-placement="bottom" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                    
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <label class="control-label clearfix" for="depDate">Depart Date:</label>
+                                                
+                                                <div class='input-group date datepicker'>
+                                                    <input type="text" class="form-control" id="depDate" placeholder="Pick a Date" name="depDate" data-toggle="tooltip" title="Pick Up Departure Date!" data-placement="bottom" />
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-3">
+                                                <label class="control-label clearfix" for="depTime">Depart Time:</label>
+                                                
+                                                <div class='input-group date timepicker'>
+                                                    <input type="text" class="form-control" id="depTime" placeholder="Pick a Time" name="depTime" data-toggle="tooltip" title="Pick Up Departure Time!" data-placement="bottom" />
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                                                </span>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        
+                                        <div class="row">
+                                        
+                                            <div class="col-sm-4">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Adults(12+ yrs)
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">1</a></li>
+                                                        <li><a href="#">2</a></li>
+                                                        <li><a href="#">3</a></li>
+                                                        <li><a href="#">4</a></li>
+                                                        <li><a href="#">5</a></li>
+                                                        <li><a href="#">6</a></li>
+                                                        <li><a href="#">7</a></li>
+                                                        <li><a href="#">8</a></li>
+                                                        <li><a href="#">9</a></li>
+                                                    </ul>
+                                                </div>
+                                        </div>
+                                            
+                                            <div class="col-sm-4">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Children(2-11 yrs)
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">0</a></li>
+                                                        <li><a href="#">1</a></li>
+                                                        <li><a href="#">2</a></li>
+                                                        <li><a href="#">3</a></li>
+                                                        <li><a href="#">4</a></li>
+                                                        <li><a href="#">5</a></li>
+                                                        <li><a href="#">6</a></li>
+                                                        <li><a href="#">7</a></li>
+                                                        <li><a href="#">8</a></li>
+                                                        <li><a href="#">9</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-4">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Infants(<2yrs in lap)
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <!--    ONEWAY PANE ENDS HERE-->
+
+                                <!--    MULTICITY PANE STARTS FROM HERE LOOK FOR COMMENT TO END HOTELS PANE-->
+                                <div class="tab-pane fade" id="multicity">
+                                    <div class = "form-group">
+                                        <div class="row">
+                                            
+                                            <div class="col-sm-6">
+                                                <label class="control-label clearfix" for="depAP">From:</label>
+                                                
+                                                <input type="text" class="form-control destinations" id="depAP" placeholder="Enter a city or airport" name="depAP" data-toggle="tooltip" title="Pick Up Departure Airport!" data-placement="bottom" />
+                                            </div>
+                                            
+                                            <div class="col-sm-6">
+                                                <label class="control-label clearfix" for="retAP">To:</label>
+                                                
+                                                <input type="text" class="form-control destinations" id="retAP" placeholder="Enter a city or airport" name="retAP" data-toggle="tooltip" title="Pick Up Arrival Airport!" data-placement="bottom" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                    
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <label class="control-label clearfix" for="depDate">Depart Date:</label>
+                                                
+                                                <div class='input-group date datepicker'>
+                                                    <input type="text" class="form-control" id="depDate" placeholder="Pick a Date" name="depDate" data-toggle="tooltip" title="Pick Up Departure Date!" data-placement="bottom" />
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-3">
+                                                <label class="control-label clearfix" for="depTime">Depart Time:</label>
+                                                
+                                                <div class='input-group date timepicker'>
+                                                    <input type="text" class="form-control" id="depTime" placeholder="Pick a Time" name="depTime" data-toggle="tooltip" title="Pick Up Departure Time!" data-placement="bottom" />
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                                                </span>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                        
+                                    </div>
+                                    
+        <!-- //////////////////////////////////////////////////////////////////////// -->
+                                    <div class = "form-group">
+                                        <div class="row">
+                                            
+                                            <div class="col-sm-6">
+                                              
+                                                
+                                                <input type="text" class="form-control destinations" id="depAP" placeholder="Enter a city or airport" name="depAP" data-toggle="tooltip" title="Pick Up Departure Airport!" data-placement="bottom" />
+                                            </div>
+                                            
+                                            <div class="col-sm-6">
+                                              
+                                                
+                                                <input type="text" class="form-control destinations" id="retAP" placeholder="Enter a city or airport" name="retAP" data-toggle="tooltip" title="Pick Up Arrival Airport!" data-placement="bottom" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                    
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                
+                                                
+                                                <div class='input-group date datepicker'>
+                                                    <input type="text" class="form-control" id="depDate" placeholder="Pick a Date" name="depDate" data-toggle="tooltip" title="Pick Up Departure Date!" data-placement="bottom" />
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-3">
+                                               
+                                                
+                                                <div class='input-group date timepicker'>
+                                                    <input type="text" class="form-control" id="depTime" placeholder="Pick a Time" name="depTime" data-toggle="tooltip" title="Pick Up Departure Time!" data-placement="bottom" />
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                                                </span>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                                                       <div class = "form-group">
+                                        <div class="row">
+                                            
+                                            <div class="col-sm-6">
+                                              
+                                                
+                                                <input type="text" class="form-control destinations" id="depAP" placeholder="Enter a city or airport" name="depAP" data-toggle="tooltip" title="Pick Up Departure Airport!" data-placement="bottom" />
+                                            </div>
+                                            
+                                            <div class="col-sm-6">
+                                              
+                                                
+                                                <input type="text" class="form-control destinations" id="retAP" placeholder="Enter a city or airport" name="retAP" data-toggle="tooltip" title="Pick Up Arrival Airport!" data-placement="bottom" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                    
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                
+                                                
+                                                <div class='input-group date datepicker'>
+                                                    <input type="text" class="form-control" id="depDate" placeholder="Pick a Date" name="depDate" data-toggle="tooltip" title="Pick Up Departure Date!" data-placement="bottom" />
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-3">
+                                               
+                                                
+                                                <div class='input-group date timepicker'>
+                                                    <input type="text" class="form-control" id="depTime" placeholder="Pick a Time" name="depTime" data-toggle="tooltip" title="Pick Up Departure Time!" data-placement="bottom" />
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                                                </span>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                                                       <div class = "form-group">
+                                        <div class="row">
+                                            
+                                            <div class="col-sm-6">
+                                              
+                                                
+                                                <input type="text" class="form-control destinations" id="depAP" placeholder="Enter a city or airport" name="depAP" data-toggle="tooltip" title="Pick Up Departure Airport!" data-placement="bottom" />
+                                            </div>
+                                            
+                                            <div class="col-sm-6">
+                                              
+                                                
+                                                <input type="text" class="form-control destinations" id="retAP" placeholder="Enter a city or airport" name="retAP" data-toggle="tooltip" title="Pick Up Arrival Airport!" data-placement="bottom" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                    
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                
+                                                
+                                                <div class='input-group date datepicker'>
+                                                    <input type="text" class="form-control" id="depDate" placeholder="Pick a Date" name="depDate" data-toggle="tooltip" title="Pick Up Departure Date!" data-placement="bottom" />
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-3">
+                                               
+                                                
+                                                <div class='input-group date timepicker'>
+                                                    <input type="text" class="form-control" id="depTime" placeholder="Pick a Time" name="depTime" data-toggle="tooltip" title="Pick Up Departure Time!" data-placement="bottom" />
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                                                </span>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                                                       <div class = "form-group">
+                                        <div class="row">
+                                            
+                                            <div class="col-sm-6">
+                                              
+                                                
+                                                <input type="text" class="form-control destinations" id="depAP" placeholder="Enter a city or airport" name="depAP" data-toggle="tooltip" title="Pick Up Departure Airport!" data-placement="bottom" />
+                                            </div>
+                                            
+                                            <div class="col-sm-6">
+                                              
+                                                
+                                                <input type="text" class="form-control destinations" id="retAP" placeholder="Enter a city or airport" name="retAP" data-toggle="tooltip" title="Pick Up Arrival Airport!" data-placement="bottom" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                    
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                
+                                                
+                                                <div class='input-group date datepicker'>
+                                                    <input type="text" class="form-control" id="depDate" placeholder="Pick a Date" name="depDate" data-toggle="tooltip" title="Pick Up Departure Date!" data-placement="bottom" />
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-3">
+                                               
+                                                
+                                                <div class='input-group date timepicker'>
+                                                    <input type="text" class="form-control" id="depTime" placeholder="Pick a Time" name="depTime" data-toggle="tooltip" title="Pick Up Departure Time!" data-placement="bottom" />
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                                                </span>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    
+                                                                       <div class = "form-group">
+                                        <div class="row">
+                                            
+                                            <div class="col-sm-6">
+                                              
+                                                
+                                                <input type="text" class="form-control destinations" id="depAP" placeholder="Enter a city or airport" name="depAP" data-toggle="tooltip" title="Pick Up Departure Airport!" data-placement="bottom" />
+                                            </div>
+                                            
+                                            <div class="col-sm-6">
+                                              
+                                                
+                                                <input type="text" class="form-control destinations" id="retAP" placeholder="Enter a city or airport" name="retAP" data-toggle="tooltip" title="Pick Up Arrival Airport!" data-placement="bottom" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                    
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                
+                                                
+                                                <div class='input-group date datepicker'>
+                                                    <input type="text" class="form-control" id="depDate" placeholder="Pick a Date" name="depDate" data-toggle="tooltip" title="Pick Up Departure Date!" data-placement="bottom" />
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-3">
+                                               
+                                                
+                                                <div class='input-group date timepicker'>
+                                                    <input type="text" class="form-control" id="depTime" placeholder="Pick a Time" name="depTime" data-toggle="tooltip" title="Pick Up Departure Time!" data-placement="bottom" />
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                                                </span>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                        
+                                    </div>
+        <!-- ///////////////////////////////////////////////////////////////////////-->                            
+                                    
+                                    <div class="form-group">
+                                        
+                                        <div class="row">
+                                        
+                                            <div class="col-sm-4">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Adults(12+ yrs)
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">1</a></li>
+                                                        <li><a href="#">2</a></li>
+                                                        <li><a href="#">3</a></li>
+                                                        <li><a href="#">4</a></li>
+                                                        <li><a href="#">5</a></li>
+                                                        <li><a href="#">6</a></li>
+                                                        <li><a href="#">7</a></li>
+                                                        <li><a href="#">8</a></li>
+                                                        <li><a href="#">9</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-4">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Children(2-11 yrs)
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">0</a></li>
+                                                        <li><a href="#">1</a></li>
+                                                        <li><a href="#">2</a></li>
+                                                        <li><a href="#">3</a></li>
+                                                        <li><a href="#">4</a></li>
+                                                        <li><a href="#">5</a></li>
+                                                        <li><a href="#">6</a></li>
+                                                        <li><a href="#">7</a></li>
+                                                        <li><a href="#">8</a></li>
+                                                        <li><a href="#">9</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-4">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Infants(<2yrs in lap)
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <!--    MULTICITY PANE ENDS HERE-->
+                                
+                            </div>
+                        <div class = "form-group">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                   
+						                  <input type="submit" class="btn btn-primary btn-md pull-right flightSearch" value="Search Flight">
+						                  <input type="submit" class="hidden submitFlight" value="Search" id="submitFlight" name="button" />
+						                  <input type="hidden" name="DoSearch" value="N" class="doSearch" />
+						                  <input type="hidden" name="DoAdvancedSearch" value="N" class="doAdvancedSearch" />
+						                  <input type="hidden" name="cid" id="hdnFlightCid" value="" />
+						                  <input type="hidden" name="update" value="true" />
+					              
+                                </div>
+                            </div>
+                        </div>
+                        
 					</div>
+                    <!--    FLIGHTS PANE ENDS HERE-->
 
 					<!--    HOTELS PANE STARTS FROM HERE LOOK FOR COMMENT TO END HOTELS PANE-->
 					<div class="tab-pane fade" id="hotels">
@@ -159,14 +764,15 @@
 							
 						</form>
 					</div>
+                    <!--    HOTELS PANE ENDS HERE-->
 
 					<!--    CARS PANE STARTS FROM HERE LOOK FOR COMMENT TO END CARS PANE-->
 					<div class="tab-pane fade" id="cars">
 						<h1>Cars</h1>
 					</div>
+                    <!--    CARS PANE ENDS HERE-->
 
-
-			<!--    ACTIVITY PANE STARTS FROM HERE LOOK FOR COMMENT TO END ACTIVITY PANE-->
+			         <!--    ACTIVITY PANE STARTS FROM HERE LOOK FOR COMMENT TO END ACTIVITY PANE-->
 					<div class="tab-pane fade" id="activity">
 					
 						<form class="form-vertical" action="#" method="GET" role="form" name="search" id="formActivity">
@@ -245,7 +851,7 @@
 						</form> 
 						
 					</div>
-			<!--    ACTIVITY PANE ENDS HERE-->
+			         <!--    ACTIVITY PANE ENDS HERE-->
 
 
 				</div>   
@@ -253,27 +859,4 @@
     </div>            
                 
     </body>
-
-	<script>
-		$(document).ready(function(){
-			
-			$('input[data-toggle="tooltip"]').tooltip({
-				delay: 500,
-				trigger: 'hover',
-				placement:'top'				
-			});
-				
-			$('.datepicker').datetimepicker({
-				format: 'MM/DD/YYYY',
-			});
-			
-			$('.timepicker').datetimepicker({
-				format: 'HH:MM',
-			});
-			
-		});
-		
-		
-		
-	</script>
 </html>
